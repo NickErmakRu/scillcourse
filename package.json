@@ -6,18 +6,23 @@
   "scripts": {
     "dev": "webpack --mode development",
     "prod": "webpack --mode production",
-    "start": "webpack serve --mode development",
+    "devStart": "cross-env NODE_ENV=development node ./bin/dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@hot-loader/react-dom": "^16.13.0",
+    "clean-webpack-plugin": "^3.0.0",
     "html-webpack-plugin": "^5.3.2",
+    "react-hot-loader": "^4.12.20",
     "ts-loader": "^6.2.1",
     "typescript": "^3.8.3",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11",
+    "webpack-dev-middleware": "^3.7.2",
     "webpack-dev-server": "^3.11.2",
+    "webpack-hot-middleware": "^2.25.0",
     "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
