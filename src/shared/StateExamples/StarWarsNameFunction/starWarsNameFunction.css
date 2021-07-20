@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gap {
+    height: 40px;
+  }
+  
+  .button {
+    width: 150px;
+    height: 40px;
+    border-width: 0;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    background-color: green;
+    cursor: pointer;
+  }
+  
+  .name {
+    margin: auto;
+    font-weight: bold;
+    font-size: 24px;
+  }
