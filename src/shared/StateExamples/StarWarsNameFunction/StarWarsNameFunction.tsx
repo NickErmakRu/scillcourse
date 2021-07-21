@@ -1,6 +1,6 @@
 import React from "react";
 import { starWars, uniqueNamesGenerator } from "unique-names-generator";
-const styles = require('./starWarsNameFunction.css');
+import styles from './starWarsNameFunction.css';
 
 interface IStarWarsNameFunctionState {
   name: string;

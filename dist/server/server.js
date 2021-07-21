@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/App.tsx":
+/*!*********************!*\
+  !*** ./src/App.tsx ***!
+  \*********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.App = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar root_1 = __webpack_require__(/*! react-hot-loader/root */ \"react-hot-loader/root\");\r\nfunction AppComponent() {\r\n    return (react_1.default.createElement(\"div\", null, \"content\"));\r\n}\r\nexports.App = root_1.hot(AppComponent);\r\n\n\n//# sourceURL=webpack:///./src/App.tsx?");
+
+/***/ }),
+
 /***/ "./src/server/indexTemplate.js":
 /*!*************************************!*\
   !*** ./src/server/indexTemplate.js ***!
@@ -106,53 +118,7 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nex
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar express_1 = __importDefault(__webpack_require__(/*! express */ \"express\"));\r\nvar server_1 = __importDefault(__webpack_require__(/*! react-dom/server */ \"react-dom/server\"));\r\nvar Header_1 = __webpack_require__(/*! ../shared/Header */ \"./src/shared/Header.jsx\");\r\nvar indexTemplate_1 = __webpack_require__(/*! ./indexTemplate */ \"./src/server/indexTemplate.js\");\r\nvar app = express_1.default();\r\napp.use('/static', express_1.default.static('./dist/client'));\r\napp.get(\"/\", function (req, res) {\r\n    res.send(indexTemplate_1.indexTemplate(server_1.default.renderToString(Header_1.Header())));\r\n});\r\napp.listen(3000, function () {\r\n    console.log(\"Server started on Port 3000\");\r\n});\r\n\n\n//# sourceURL=webpack:///./src/server/server.js?");
-
-/***/ }),
-
-/***/ "./src/shared/Header.jsx":
-/*!*******************************!*\
-  !*** ./src/shared/Header.jsx ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\r\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\r\n}) : function(o, v) {\r\n    o[\"default\"] = v;\r\n});\r\nvar __importStar = (this && this.__importStar) || function (mod) {\r\n    if (mod && mod.__esModule) return mod;\r\n    var result = {};\r\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\r\n    __setModuleDefault(result, mod);\r\n    return result;\r\n};\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.Header = void 0;\r\nvar React = __importStar(__webpack_require__(/*! react */ \"react\"));\r\nvar root_1 = __webpack_require__(/*! react-hot-loader/root */ \"react-hot-loader/root\");\r\nvar header_css_1 = __importDefault(__webpack_require__(/*! ./header.css */ \"./src/shared/header.css\"));\r\nvar StarWarsNameFunction_1 = __webpack_require__(/*! ./StateExamples/StarWarsNameFunction/StarWarsNameFunction */ \"./src/shared/StateExamples/StarWarsNameFunction/StarWarsNameFunction.tsx\");\r\nfunction HeaderComponent() {\r\n    return (React.createElement(\"header\", null,\r\n        React.createElement(\"h1\", { className: header_css_1.default.example }, \"Reddit for our own\"),\r\n        React.createElement(\"p\", null, \"Hello there\"),\r\n        React.createElement(StarWarsNameFunction_1.StarWarsNameFunction, null)));\r\n}\r\nexports.Header = root_1.hot(HeaderComponent);\r\n\n\n//# sourceURL=webpack:///./src/shared/Header.jsx?");
-
-/***/ }),
-
-/***/ "./src/shared/StateExamples/StarWarsNameFunction/StarWarsNameFunction.tsx":
-/*!********************************************************************************!*\
-  !*** ./src/shared/StateExamples/StarWarsNameFunction/StarWarsNameFunction.tsx ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\r\nvar __assign = (this && this.__assign) || function () {\r\n    __assign = Object.assign || function(t) {\r\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\r\n            s = arguments[i];\r\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\r\n                t[p] = s[p];\r\n        }\r\n        return t;\r\n    };\r\n    return __assign.apply(this, arguments);\r\n};\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.StarWarsNameFunction = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\r\nvar unique_names_generator_1 = __webpack_require__(/*! unique-names-generator */ \"unique-names-generator\");\r\nvar styles = __webpack_require__(/*! ./starWarsNameFunction.css */ \"./src/shared/StateExamples/StarWarsNameFunction/starWarsNameFunction.css\");\r\nfunction StarWarsNameFunction() {\r\n    var randomName = function () { return unique_names_generator_1.uniqueNamesGenerator({ dictionaries: [unique_names_generator_1.starWars], length: 1 }); };\r\n    //   const [name, setName] = React.useState(randomName);\r\n    //   const [count, setCount] = React.useState(0);\r\n    //   const handleClick = () => {\r\n    //     setName(randomName);\r\n    //     setCount((prevCount) => prevCount + 1)\r\n    //   }\r\n    var _a = react_1.default.useState({\r\n        name: randomName(),\r\n        count: 0\r\n    }), state = _a[0], setState = _a[1];\r\n    var handleClick = function () {\r\n        setState(function (prevState) { return (__assign(__assign({}, prevState), { count: prevState.count + 1 })); });\r\n        setState(function (prevState) { return (__assign(__assign({}, prevState), { name: randomName() })); });\r\n    };\r\n    return (react_1.default.createElement(\"section\", { className: styles.container },\r\n        react_1.default.createElement(\"span\", { className: styles.name }, state.name),\r\n        react_1.default.createElement(\"div\", { className: styles.gap }),\r\n        react_1.default.createElement(\"span\", { className: styles.name },\r\n            \"\\u043F\\u043E\\u043F\\u044B\\u0442\\u043A\\u0430: \",\r\n            state.count),\r\n        react_1.default.createElement(\"div\", { className: styles.gap }),\r\n        react_1.default.createElement(\"button\", { className: styles.button, onClick: handleClick }, \"\\u041C\\u043D\\u0435 \\u043D\\u0443\\u0436\\u043D\\u043E \\u0438\\u043C\\u044F!\")));\r\n}\r\nexports.StarWarsNameFunction = StarWarsNameFunction;\r\n\n\n//# sourceURL=webpack:///./src/shared/StateExamples/StarWarsNameFunction/StarWarsNameFunction.tsx?");
-
-/***/ }),
-
-/***/ "./src/shared/StateExamples/StarWarsNameFunction/starWarsNameFunction.css":
-/*!********************************************************************************!*\
-  !*** ./src/shared/StateExamples/StarWarsNameFunction/starWarsNameFunction.css ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// Exports\nmodule.exports = {\n\t\"container\": \"starWarsNameFunction__container--1mT8e\",\n\t\"gap\": \"starWarsNameFunction__gap--32DVF\",\n\t\"button\": \"starWarsNameFunction__button--3eLRm\",\n\t\"name\": \"starWarsNameFunction__name--1ZOnb\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/StateExamples/StarWarsNameFunction/starWarsNameFunction.css?");
-
-/***/ }),
-
-/***/ "./src/shared/header.css":
-/*!*******************************!*\
-  !*** ./src/shared/header.css ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// Exports\nmodule.exports = {\n\t\"example\": \"header__example--QgiVa\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/header.css?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar express_1 = __importDefault(__webpack_require__(/*! express */ \"express\"));\r\nvar server_1 = __importDefault(__webpack_require__(/*! react-dom/server */ \"react-dom/server\"));\r\nvar App_1 = __webpack_require__(/*! ../App */ \"./src/App.tsx\");\r\nvar indexTemplate_1 = __webpack_require__(/*! ./indexTemplate */ \"./src/server/indexTemplate.js\");\r\nvar app = express_1.default();\r\napp.use('/static', express_1.default.static('./dist/client'));\r\napp.get(\"/\", function (req, res) {\r\n    res.send(indexTemplate_1.indexTemplate(server_1.default.renderToString(App_1.App())));\r\n});\r\napp.listen(3000, function () {\r\n    console.log(\"Server started on Port 3000\");\r\n});\r\n\n\n//# sourceURL=webpack:///./src/server/server.js?");
 
 /***/ }),
 
@@ -197,17 +163,6 @@ eval("module.exports = require(\"react-dom/server\");\n\n//# sourceURL=webpack:/
 /***/ (function(module, exports) {
 
 eval("module.exports = require(\"react-hot-loader/root\");\n\n//# sourceURL=webpack:///external_%22react-hot-loader/root%22?");
-
-/***/ }),
-
-/***/ "unique-names-generator":
-/*!*****************************************!*\
-  !*** external "unique-names-generator" ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = require(\"unique-names-generator\");\n\n//# sourceURL=webpack:///external_%22unique-names-generator%22?");
 
 /***/ })
 
