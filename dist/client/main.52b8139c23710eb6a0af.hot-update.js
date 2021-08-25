@@ -12,15 +12,15 @@ eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod)
 
 /***/ }),
 
-/***/ "./src/utils/react/generateRandomIndex.ts":
+/***/ "./src/shared/GenericList/GenericList.tsx":
 /*!************************************************!*\
-  !*** ./src/utils/react/generateRandomIndex.ts ***!
+  !*** ./src/shared/GenericList/GenericList.tsx ***!
   \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.generateId = exports.assignId = exports.generateRandomString = void 0;\r\nvar assoc_1 = __webpack_require__(/*! ../js/assoc */ \"./src/utils/js/assoc.ts\");\r\nexports.generateRandomString = function () { return Math.random().toString(36).substring(2, 15); };\r\nexports.assignId = assoc_1.assoc('id', exports.generateRandomString());\r\nexports.generateId = function (obj) {\r\n    return assoc_1.assoc('id', exports.generateRandomString())(obj);\r\n};\r\n\n\n//# sourceURL=webpack:///./src/utils/react/generateRandomIndex.ts?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.MyList = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nfunction MyList(_a) {\r\n    var list = _a.list;\r\n    return (react_1.default.createElement(\"ul\", null, list.map(function (item, index) { return (react_1.default.createElement(\"li\", { key: index }, item.value)); })));\r\n}\r\nexports.MyList = MyList;\r\n\n\n//# sourceURL=webpack:///./src/shared/GenericList/GenericList.tsx?");
 
 /***/ })
 
